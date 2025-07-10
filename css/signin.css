@@ -1,0 +1,74 @@
+
+/* form border colors*/
+form{
+    border: 3px solid aliceblue;
+}
+
+/*Measuremnets to text width*/
+input[type=text], input[type=password] {
+   width:100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block; 
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+}
+
+/* style or design for all the buttons*/
+button{
+    background-color: aliceblue;
+    color: azure;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+/*add a cheeky hover effect for buttons wink*/
+button:hover {
+    opacity: 0.8;
+}
+
+/* add more cheecky style for the cancel button*/
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: aqua;
+}
+
+/*place the image in the middle*/
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* style for the image*/
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/*adding padding to containers*/
+.container {
+    padding: 16px;
+}
+
+/*position of the forgot password text*/
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* how the span and cancel button appear on smaller screens*/
+@media screen  and (max-width: 300px) {
+    span.psw {
+        display:block;
+        float:none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+    
+}
