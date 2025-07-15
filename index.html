@@ -1,32 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <!-- something isnt right hereeeeee add the form text into the body-->
-    <link rel="signin" href="signin.css">
-</head>
-<!-- i am adding a photo that should appear sign in page -->
+<form action="action_page.php" method="post">
+  <div class="imgcontainer">
+   <img src="pictures/kai 2.jpg" />
+  </div>
 
-    <form action="action_page.php" method="post">
-        <div class="imgcontainer">
-            <img src="pictures/jaehyun.jpeg" alt="jaehyun">
-        </div>
-<!-- Creating the container where the username will be entered =) plus the login and remeber me buttons -->
-        <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <imput type="text" aria-placeholder="Enter Username" name="uname" required></imput>
-        
-        <button type="submit">Login</button>
-        <label>
-        <input type="checkbox" checked="checked" name="remember">
-        Remember me
-        </label>
-        </div>
-        <!-- Sets the background color ig-->
-<div class="container" style="background-color: aliceblue;">
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password</a></span>
-</div>
-
-    </form>
-
-    </html>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
